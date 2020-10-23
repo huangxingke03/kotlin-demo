@@ -1,0 +1,3 @@
+include':webpagejsbridge'
+include ':app'
+rootProject.name = "DoctorFace-Top"

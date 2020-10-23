@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_home_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/btn_set_module"
+        android:layout_width="@dimen/px33"
+        android:layout_height="@dimen/px25"
+        android:layout_marginLeft="@dimen/px28"
+        android:layout_marginTop="@dimen/px35"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_home_setting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/logo_doctor_face"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_doctor_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px25"
+        android:layout_marginTop="@dimen/px25"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_doctor_face"
+        app:layout_constraintLeft_toRightOf="@+id/btn_set_module"
+        app:layout_constraintRight_toLeftOf="@+id/constraintLayout_robot_information"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_robot_information"
+        android:layout_width="@dimen/px0"
+        android:layout_height="@dimen/px50"
+        android:layout_marginLeft="@dimen/px90"
+        android:layout_marginTop="@dimen/px20"
+        android:layout_marginRight="@dimen/px25"
+        android:background="@drawable/square_back_blue_10"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/logo_doctor_face"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px35"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_home_location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/robot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="机器人**号"
+            android:textColor="#ffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/logo_location"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/signal_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px20"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home_signal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/text_signal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px20"
+            android:gravity="center"
+            android:text="@string/ic_signal"
+            android:textColor="#ffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/battery_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/battery_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px20"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home_battery_list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/text_battery"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_marginRight="@dimen/px35"
+            android:gravity="center"
+            android:text="@string/battery_60"
+            android:textColor="#ffff"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/home_central_circle"
+        android:layout_width="@dimen/px330"
+        android:layout_height="@dimen/px330"
+        android:layout_marginLeft="@dimen/px160"
+        android:layout_marginTop="@dimen/px30"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/main_home_central_circle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_doctor_face" />
+
+    <ImageView
+        android:id="@+id/wink_speak_animation"
+        android:layout_width="@dimen/px170"
+        android:layout_height="@dimen/px220"
+        android:layout_marginLeft="@dimen/px245"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/px25"
+        android:src="@drawable/wink_speak_animation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_doctor_face" />
+
+    <TextView
+        android:id="@+id/voice_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px200"
+        android:layout_marginTop="@dimen/px70"
+        android:background="@drawable/home_msg_bg"
+        android:ellipsize="end"
+        android:lineSpacingExtra="8dp"
+        android:maxWidth="@dimen/px280"
+        android:maxLines="2"
+        android:minWidth="@dimen/px280"
+        android:padding="@dimen/px15"
+        android:textColor="#FFFFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wink_speak_animation" />
+
+    <com.fitgreat.doctorface_top.view.WaveView
+        android:id="@+id/voice_animation"
+        android:layout_width="@dimen/px180"
+        android:layout_height="@dimen/px65"
+        android:layout_marginLeft="@dimen/px230"
+        app:amplitude="0.6"
+        app:amplitudeFactor="0.5"
+        app:autoStart="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voice_msg"
+        app:speed="0.08"
+        app:standByAmplitude="0.2"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_sign_in"
+        android:layout_width="@dimen/px240"
+        android:layout_height="@dimen/px0"
+        android:layout_marginTop="@dimen/px25"
+        android:layout_marginRight="@dimen/px25"
+        android:background="@drawable/square_back_blue"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout_experts_glance"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_robot_information"
+        app:layout_constraintVertical_weight="1">
+
+        <LinearLayout
+            android:id="@+id/sign_in_layout"
+            android:layout_width="@dimen/px104"
+            android:layout_height="@dimen/px45"
+            android:background="@drawable/power_mode_layout_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/sign_in_txt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <ImageView
+                android:id="@+id/sign_in_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/home_power_mode_bg"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/bt_home_sign_in" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_in_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/base_title"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_experts_glance"
+        android:layout_width="@dimen/px240"
+        android:layout_height="@dimen/px0"
+        android:layout_marginTop="@dimen/px25"
+        android:layout_marginRight="@dimen/px25"
+        android:background="@drawable/square_back_blue"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout_mode_switch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_sign_in"
+        app:layout_constraintVertical_weight="1">
+
+        <LinearLayout
+            android:id="@+id/experts_glance_layout"
+            android:layout_width="@dimen/px104"
+            android:layout_height="@dimen/px45"
+            android:background="@drawable/power_mode_layout_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/experts_glance_txt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <ImageView
+                android:id="@+id/without_recharge_auto_mission_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/home_power_mode_bg"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/bt_home_experts" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/experts_glance_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:text="@string/experts_glance"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/experts_glance_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_mode_switch"
+        android:layout_width="@dimen/px240"
+        android:layout_height="@dimen/px0"
+        android:layout_marginTop="@dimen/px25"
+        android:layout_marginRight="@dimen/px25"
+        android:layout_marginBottom="@dimen/px25"
+        android:background="@drawable/square_back_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_experts_glance"
+        app:layout_constraintVertical_weight="1">
+
+        <LinearLayout
+            android:id="@+id/robot_mode_item"
+            android:layout_width="@dimen/px160"
+            android:layout_height="@dimen/px45"
+            android:background="@drawable/power_mode_layout_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/power_mode_txt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <ImageView
+                android:id="@+id/robot_control_mode_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_power_mode_bg"
+                android:padding="@dimen/px12"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_control_mode_src" />
+
+            <ImageView
+                android:id="@+id/robot_drag_mode_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/home_power_mode_bg"
+                android:padding="@dimen/px12"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_move_mode_src" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/power_mode_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px10"
+            android:text="@string/drag_mode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/robot_mode_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

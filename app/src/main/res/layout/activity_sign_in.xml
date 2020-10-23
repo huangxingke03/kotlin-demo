@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    tools:context=".signin.SignInActivity">
+
+    <com.fitgreat.doctorface_top.view.BaseTitleView
+        android:id="@+id/sign_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleName="@string/sign_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointment_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px0"
+        android:layout_margin="@dimen/px20"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_title"
+        app:layout_constraintVertical_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px0"
+        android:layout_margin="@dimen/px20"
+        android:background="@android:color/white"
+        android:gravity="center"
+        app:layout_constraintVertical_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_title">
+
+        <ImageView
+            android:id="@+id/mission_list_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@mipmap/ic_no_data"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_no_data" />
+
+        <TextView
+            android:id="@+id/mission_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/check_appointment_no_data_tip"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_expert"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px130"
+    android:background="@drawable/home_mode_bg_shape">
+
+    <ImageView
+        android:id="@+id/expert_image"
+        android:layout_width="@dimen/px90"
+        android:layout_height="@dimen/px90"
+        android:layout_marginLeft="@dimen/px15"
+        android:background="@drawable/circle_white_shape_15"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_home_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expert_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginTop="@dimen/px20"
+        android:text="@string/default_expert"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize15"
+        app:layout_constraintLeft_toRightOf="@+id/expert_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expert_job_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px5"
+        android:layout_marginTop="@dimen/px20"
+        android:text="@string/default_job_title"
+        android:textColor="@color/expert_info_color"
+        android:textSize="@dimen/textSize13"
+        app:layout_constraintLeft_toRightOf="@+id/expert_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expert_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginTop="@dimen/px10"
+        android:text="@string/default_department"
+        android:textColor="@color/expert_info_color"
+        android:textSize="@dimen/textSize13"
+        app:layout_constraintLeft_toRightOf="@+id/expert_image"
+        app:layout_constraintTop_toBottomOf="@+id/expert_name" />
+
+    <TextView
+        android:id="@+id/features_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginTop="@dimen/px10"
+        android:text="@string/good_at_title"
+        android:textColor="@color/expert_info_color"
+        android:textSize="@dimen/textSize13"
+        app:layout_constraintLeft_toRightOf="@+id/expert_image"
+        app:layout_constraintTop_toBottomOf="@+id/expert_department" />
+
+    <TextView
+        android:id="@+id/features_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px5"
+        android:layout_marginTop="@dimen/px10"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/px300"
+        android:maxLines="1"
+        android:text="@string/sign_dialog_content"
+        android:textColor="@color/expert_info_color"
+        android:textSize="@dimen/textSize13"
+        app:layout_constraintLeft_toRightOf="@+id/features_title"
+        app:layout_constraintTop_toBottomOf="@+id/expert_department" />
+</androidx.constraintlayout.widget.ConstraintLayout>

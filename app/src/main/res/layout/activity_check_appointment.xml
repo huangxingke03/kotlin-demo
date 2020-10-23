@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/check_appointment_back"
+    tools:context=".checkappointment.CheckAppointmentActivity">
+
+    <com.fitgreat.doctorface_top.view.BaseTitleView
+        android:id="@+id/check_appointment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleName="@string/check_appointment_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px440"
+        android:layout_margin="@dimen/px30"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_appointment_title">
+
+        <EditText
+            android:id="@+id/check_appointment_condition"
+            android:layout_width="@dimen/px400"
+            android:layout_height="@dimen/px55"
+            android:background="@drawable/line_gray_1"
+            android:gravity="center|left"
+            android:hint="@string/hint_query_by_phone"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:padding="@dimen/px15"
+            android:textSize="@dimen/textSize18"
+            app:layout_constraintBottom_toTopOf="@+id/bt_check_appointment"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_check_appointment"
+            android:layout_width="@dimen/px200"
+            android:layout_height="@dimen/px48"
+            android:background="@drawable/bt_check_appointment"
+            android:text="@string/check_title"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/px40"
+            android:textSize="@dimen/textSize18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check_appointment_condition" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

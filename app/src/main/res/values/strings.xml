@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">DoctorFace-Top</string>
+    <string name="base_title">签到</string>
+    <string name="tip_title">提示</string>
+    <string name="base_content">你已成功签到</string>
+    <string name="sign_title">签到</string>
+    <string name="sign_dialog_content">你已签到成功,\t同时已为您打印预检单,\t是否需要小灰带您去挂号处和对应护士台呢?</string>
+    <string name="navigation_dialog_content">是否需要带您去就诊处?\t\t如需要请在挂号完成后点击"是".</string>
+    <string name="patient_name">姓名:</string>
+    <string name="patient_phone">手机号:</string>
+    <string name="reservation_type">预约类型:</string>
+    <string name="patient_age">年龄:</string>
+    <string name="reservation_department">预约科室:</string>
+    <string name="reservation_doctor">预约医生:</string>
+    <string name="reservation_time">预约时间:</string>
+    <string name="patient_symptom">症状:</string>
+    <string name="answer_yes">是</string>
+    <string name="answer_no">否</string>
+    <string name="expert_list_title">专家一览</string>
+    <string name="expert_info_title">专家详情</string>
+    <string name="ic_signal">信号</string>
+    <string name="battery_60">10%</string>
+    <string name="check_appointment_no_data_tip">不好意思,\t未查询到该用户信息</string>
+    <string name="experts_glance">专家一览</string>
+    <string name="check_appointment_tip">手机号不能为空,\t请重新输入</string>
+    <string name="control_mode">控制模式</string>
+    <string name="drag_mode">拖动模式</string>
+    <string name="hint_query_by_phone">请输入手机号查询</string>
+    <string name="default_expert">李医生</string>
+    <string name="check_title">查询</string>
+    <string name="default_job_title">主任医师</string>
+    <string name="default_department">骨科</string>
+    <string name="good_at_title">擅长:</string>
+    <string name="check_appointment_title">查询信息</string>
+    <string name="setting_title">设置</string>
+    <string name="play_end_tip_title">播放提示</string>
+
+    <string name="dialog_chose_sure">确认</string>
+    <string name="dialog_chose_replay">再放一遍</string>
+    <string name="file_start_download_title">文件开始下载...</string>
+    <string name="file_downloading_title">文件下载中...</string>
+
+</resources>

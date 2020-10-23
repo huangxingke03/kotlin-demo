@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/update_version_bg"
+    android:padding="@dimen/px45">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px20"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/px50"
+        android:text="@string/file_start_download_title"
+        android:textColor="#333333"
+        android:textSize="@dimen/textSize17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/update_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/px193"
+        android:layout_height="@dimen/px18"
+        android:layout_marginTop="@dimen/px10"
+        android:layout_marginBottom="@dimen/px20"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/percent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px11"
+        android:layout_marginTop="@dimen/px10"
+        android:layout_marginBottom="@dimen/px20"
+        android:singleLine="true"
+        android:text="0%"
+        android:textColor="@color/download_dialog_txt"
+        android:textSize="@dimen/textSize14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/update_progress"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+</androidx.constraintlayout.widget.ConstraintLayout>
