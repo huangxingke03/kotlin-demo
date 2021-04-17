@@ -1,2 +1,2 @@
-# kotlin-project
+# kotlin_project
 kotlin
